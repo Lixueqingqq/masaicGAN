@@ -1,0 +1,9 @@
+原网站：https://github.com/zalandoresearch/famos  
+在其上针对于mosaicGAN.py做了修改  
+写了测试函数  
+运行训练代码：  
+nohup python -u mosaicGAN.py --texturePath=samples/cloud3/ --contentPath=samples/ying/ --testImage=samples/test/bao.jpg --image
+Size=192 --batchSize=16 >train_cloud3.log 2>&1 &
+
+运行测试代码：  
+python test_mosaicGAN.py --texturePath=samples/flame/ --contentPath=samples/test/
